@@ -1,23 +1,18 @@
-import logo from './logo.svg';
+import React, { useState } from 'react';
+import { Routes, Route } from 'react-router';
+import { Dashboard } from './Views/Dashboard';
 import './App.css';
+import { AppSidebar } from './Components/Sidebar';
 
 function App() {
+  const [open, setOpen] = useState(false);
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="App" style={{width: '100vw', height: '100vh'}}>
+      <AppSidebar />
+      <Routes>
+        <Route index element={<Dashboard />} path="/dashboard"></Route>
+        <Route element={<Dashboard />} path="/components"></Route>
+      </Routes>
     </div>
   );
 }
