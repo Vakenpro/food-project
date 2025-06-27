@@ -13,6 +13,7 @@ function App() {
       {false && <AppSidebar />}
       {false && <AppHeader />}
       <Box sx={{width: 'calc(100% - 0px)', height: 'calc(100% - 64px)', marginLeft: '0px'}}>
+        <Dashboard />
         <Routes>
           <Route index element={<Dashboard />} path="/"></Route>
           <Route element={<Dashboard />} path="/dishes"></Route>
