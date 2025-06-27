@@ -13,6 +13,9 @@ export const AppSidebar = () => {
         onMouseLeave={() => setOpen(false)}
         rootStyles={{
           height: '100%',
+          background: 'rgba(249, 249, 249, 1)',
+          boxShadow: '0px 5px 5px grey',
+          position: 'absolute',
           "& .ps-menu-label2": {
             display: 'flex',
             alignItems: 'center'

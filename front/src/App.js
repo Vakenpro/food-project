@@ -1,18 +1,24 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { Routes, Route } from 'react-router';
 import { Dashboard } from './Views/Dashboard';
+import { Box } from '@mui/material';
 import './App.css';
 import { AppSidebar } from './Components/Sidebar';
+import { AppHeader } from './Components/Header';
+import { IngredientsPage } from './Views/Ingredients';
 
 function App() {
-  const [open, setOpen] = useState(false);
   return (
     <div className="App" style={{width: '100vw', height: '100vh'}}>
-      <AppSidebar />
-      <Routes>
-        <Route index element={<Dashboard />} path="/dashboard"></Route>
-        <Route element={<Dashboard />} path="/components"></Route>
-      </Routes>
+      {false && <AppSidebar />}
+      {false && <AppHeader />}
+      <Box sx={{width: 'calc(100% - 0px)', height: 'calc(100% - 64px)', marginLeft: '0px'}}>
+        <Routes>
+          <Route index element={<Dashboard />} path="/"></Route>
+          <Route element={<Dashboard />} path="/dishes"></Route>
+          <Route element={<IngredientsPage />} path="/ingredients"></Route>
+        </Routes>
+      </Box>
     </div>
   );
 }
