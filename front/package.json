@@ -2,7 +2,7 @@
   "name": "front",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://vakenpro.github.io/teeth-app",
+  "homepage": "http://vakenpro.github.io/food-project",
   "dependencies": {
     "@mui/material": "^6.4.6",
     "@testing-library/dom": "^10.4.0",
