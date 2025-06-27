@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/teeth-app/static/css/main.f855e6bc.css",
-    "main.js": "/teeth-app/static/js/main.70898429.js",
-    "static/js/453.80efc53e.chunk.js": "/teeth-app/static/js/453.80efc53e.chunk.js",
-    "static/media/logoTransporent.png": "/teeth-app/static/media/logoTransporent.a9b360626aabe2131584.png",
-    "static/media/ingredient_icon.svg": "/teeth-app/static/media/ingredient_icon.c7a71ebb9e306f1014ab4cf9a4618083.svg",
-    "index.html": "/teeth-app/index.html",
-    "main.f855e6bc.css.map": "/teeth-app/static/css/main.f855e6bc.css.map",
-    "main.70898429.js.map": "/teeth-app/static/js/main.70898429.js.map",
-    "453.80efc53e.chunk.js.map": "/teeth-app/static/js/453.80efc53e.chunk.js.map"
+    "main.css": "/food-project/static/css/main.f855e6bc.css",
+    "main.js": "/food-project/static/js/main.5e5ae5c8.js",
+    "static/js/453.80efc53e.chunk.js": "/food-project/static/js/453.80efc53e.chunk.js",
+    "static/media/logoTransporent.png": "/food-project/static/media/logoTransporent.a9b360626aabe2131584.png",
+    "static/media/ingredient_icon.svg": "/food-project/static/media/ingredient_icon.c7a71ebb9e306f1014ab4cf9a4618083.svg",
+    "index.html": "/food-project/index.html",
+    "main.f855e6bc.css.map": "/food-project/static/css/main.f855e6bc.css.map",
+    "main.5e5ae5c8.js.map": "/food-project/static/js/main.5e5ae5c8.js.map",
+    "453.80efc53e.chunk.js.map": "/food-project/static/js/453.80efc53e.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.f855e6bc.css",
-    "static/js/main.70898429.js"
+    "static/js/main.5e5ae5c8.js"
   ]
 }
