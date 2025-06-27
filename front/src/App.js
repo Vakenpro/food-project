@@ -15,7 +15,7 @@ function App() {
       <Box sx={{width: 'calc(100% - 0px)', height: 'calc(100% - 64px)', marginLeft: '0px'}}>
         <Dashboard />
         <Routes>
-          <Route index element={<Dashboard />} path="/"></Route>
+          <Route index element={<Dashboard />} path="/dashboard"></Route>
           <Route element={<Dashboard />} path="/dishes"></Route>
           <Route element={<IngredientsPage />} path="/ingredients"></Route>
         </Routes>
