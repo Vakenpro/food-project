@@ -4,7 +4,7 @@ import { Box } from '@mui/material';
 import { TeethBar } from '../TeethBar';
 import { TOOTH_DATA } from './constant';
 
-export const Skull = () => {
+export const Skull = ({isSvg = false}) => {
   const [data, setData] = useState(TOOTH_DATA);
 
   const handleUpdateData = (newValue) => {
@@ -13,10 +13,10 @@ export const Skull = () => {
 
   return (
     <Box>
-      <TeethBar type="top" data={data.filter(({position}) => position.includes('T'))} onUpdate={handleUpdateData} />
-      <Jaw data={data.filter(({position}) => position.includes('T'))} onUpdate={handleUpdateData} />
+      <TeethBar type="top" data={data.filter(({position}) => position.includes('T'))} onUpdate={handleUpdateData} isSvg={isSvg} />
+      <Jaw type="top" data={data.filter(({position}) => position.includes('T'))} onUpdate={handleUpdateData} />
       <Jaw type="bottom" data={data.filter(({position}) => position.includes('B'))} onUpdate={handleUpdateData} />
-      <TeethBar type="bottom" data={data.filter(({position}) => position.includes('B'))} onUpdate={handleUpdateData} />
+      <TeethBar type="bottom" data={data.filter(({position}) => position.includes('B'))} onUpdate={handleUpdateData} isSvg={isSvg} />
     </Box>
   )
 }
